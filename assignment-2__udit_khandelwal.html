@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment-2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <style>
+        .main-body{
+            height: 2000px;
+
+        }
+
+        .pic{
+            background-image:linear-gradient(to top right,#4F0707,#9D0E0E00),url(./logo_pic.png)  ;
+            height: 25%;
+        }
+
+        .pic-flex{
+            margin-left: 28%;
+           
+        }
+
+        .logo{
+            font-size: 5rem;
+            color: #EB2929;
+            font-family: sans-serif;
+            padding-left: 5%;
+            padding-bottom: 1%;
+            width: 21%;
+        }
+
+        .location-box{
+            width: 210px;
+            height:59px
+        }
+
+        .search-box{
+            width: 64%;
+            display: inline-block;
+        }
+
+        .box-div{
+            width: 104%;
+        }
+        
+
+        @media(max-width:343px){
+            
+            .login-div{
+                width: 94%;
+            }
+
+            .pic-flex{
+                margin-left: 0%;
+                margin-top: 5%;
+            }
+
+            .logo{
+                width: 120px;
+            }
+
+            .search-box{
+            width: 89%;
+            margin-left: 2%;
+        }
+
+        .search-box-icon{
+            margin-top: 8%;
+        }
+
+        }
+
+        @media(min-width:343px) and (max-width:576px){
+            .pic-flex{
+                margin-left: 0%;
+                margin-top: 1%;
+            }
+
+            .logo{
+                width: 120px;
+            }
+            
+            .login-div{
+                width: 86%;
+            }
+
+            .box-div{
+                margin-left: 12%;
+                width: 94%;
+            }
+
+            .search-box{
+                width: 90%;
+            }
+
+            .search-box-icon{
+                margin-top: 7%;
+            }
+
+            .pic-title{
+                margin-left:36px;
+            }
+
+        }
+
+        @media(min-width:525px) and (max-width:550px)
+        {
+            
+            .pic-title{
+            margin-left:10%;
+        }
+        }
+
+        @media(min-width:550px) and (max-width:576px)
+        {
+            
+            .pic-title{
+            margin-left:12%;
+        }
+        }
+
+        @media(width:576px){
+            .pic-title{
+            margin-left:8%;
+        }
+        }
+
+        @media(max-width:240px){
+            .main-body{
+                width: 111%;
+            }
+            
+            .login-div{
+                width: 84%;
+                font-size: 7px;
+            }
+
+            .pic-flex {
+                margin-left: -5%;
+                margin-top: 5%;
+            }
+
+            .items-heading{
+                color:#192F60;
+                font-size:30px;
+                margin-left:0%;
+            }
+            
+            .box-div{
+                margin-left: 4%;
+            }
+            
+            .row-div{
+                height: 30%;
+            }
+
+            .row-items{
+                width: 92%;
+                height: 100%;
+                margin-left: -9%;
+            }
+
+            .col-items{
+                width: 132%;
+                height: 85%;
+            }
+
+            .item-1{
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+            }
+
+            .item-1-image{
+                width: 98%;
+                height: 100%;
+            }
+
+            .item-2{
+                display:inline-block;
+                width: 45%;
+                height: 100%;
+                float: right;
+                padding-top: 6%;
+                margin-right: 2%;
+            }
+
+            .item-2-heading{
+                font-size: 1.15rem;
+            }
+        }
+
+        @media(min-width:240px) and (max-width:280px){
+            
+            .login-div{
+                width: 84%;
+                font-size: 7px;
+            }
+
+            .pic-flex {
+                margin-left: -5%;
+                margin-top: 5%;
+            }
+
+            .box-div{
+                margin-left: 5%;
+            }
+
+            .search-box-button{
+                width: ;
+            }
+
+            .search-box {
+                width: ;
+            }
+
+            .search-box-icon{
+
+            }
+
+            .items-heading{
+                color:#192F60;
+                font-size:30px;
+                margin-left:0%;
+            }
+            
+            
+            .row-div{
+                height: 30%;
+            }
+
+            .row-items{
+                width: 92%;
+                height: 100%;
+                margin-left: -9%;
+            }
+
+            .col-items{
+                width: 132%;
+                height: 85%;
+            }
+
+            .item-1{
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+            }
+
+            .item-1-image{
+                width: 98%;
+                height: 100%;
+            }
+
+            .item-2{
+                display:inline-block;
+                width: 45%;
+                height: 100%;
+                float: right;
+                padding-top: 6%;
+                margin-right: 2%;
+            }
+
+            .item-2-heading{
+                font-size: 1.15rem;
+            }
+        }
+
+        @media(min-width:280px) and (max-width:332px){
+            
+            .login-div{
+                width: 85%;
+                font-size: 9px;
+            }
+
+            .items-heading{
+                color:#192F60;
+                font-size:30px;
+                margin-left:0%;
+            }
+            
+            
+            .row-div{
+                height: 30%;
+            }
+
+            .row-items{
+                width: 92%;
+                height: 100%;
+                margin-left: -9%;
+            }
+
+            .col-items{
+                width: 125%;
+                height: 85%;
+            }
+
+            .item-1{
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+            }
+
+            .item-1-image{
+                width: 98%;
+                height: 100%;
+            }
+
+            .item-2{
+                display:inline-block;
+                width: 45%;
+                height: 100%;
+                float: right;
+                padding-top: 6%;
+                margin-right: 2%;
+            }
+
+            .item-2-heading{
+                font-size: 1.25rem;
+            }
+        }
+
+        @media(min-width:332px) and (max-width:576px){
+            
+            .items-heading{
+                color:#192F60;
+                font-size:30px;
+                margin-left:6%;
+            }
+            
+            
+            .row-div{
+                height: 30%;
+            }
+
+            .row-items{
+                width: 92%;
+                height: 100%;
+                margin-left: 5%;
+            }
+
+            .col-items{
+                width: 103%;
+                height: 85%;
+            }
+
+            .item-1{
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+            }
+
+            .item-1-image{
+                width: 98%;
+                height: 100%;
+            }
+
+            .item-2{
+                display:inline-block;
+                width: 45%;
+                height: 100%;
+                float: right;
+                padding-top: 6%;
+                margin-right: 2%;
+            }
+
+            .item-2-heading{
+                font-size: 1.65rem;
+            }
+        }
+        
+        @media(min-width:576px) and (max-width:768px){
+            .pic-flex{
+                margin-left: 3%;
+                margin-top: 5%;
+            }
+
+            .logo{
+                width: 26%;
+            }
+
+            .box-div{
+                width: 107%;
+            }
+
+            .search-box{
+                width: 93%;
+            }
+
+            .search-box-icon{
+                margin-top: 6%;
+            }
+
+
+            .items-heading{
+                color:#192F60;
+                font-size:30px;
+                margin-left:7%;
+            }
+            
+            .row-div{
+                height: 30%;
+            }
+
+            .row-items{
+                width: 92%;
+                height: 100%;
+                margin-left: 5%;
+            }
+
+            .col-items{
+                width: 103%;
+                height: 85%;
+            }
+
+            .item-1{
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+            }
+
+            .item-1-image{
+                width: 98%;
+                height: 100%;
+            }
+
+            .item-2{
+                display:inline-block;
+                width: 45%;
+                height: 100%;
+                float: right;
+                padding-top: 6%;
+                margin-right: 2%;
+            }
+
+            .item-2-heading{
+                font-size: 1.85rem;
+            }
+        }
+
+        @media(min-width:768px) and (max-width:992px){
+            .pic-flex{
+                margin-left: 7%;
+                margin-top: 19%;
+            }
+
+            .logo{
+                width: 22%;
+            }
+
+            .search-box-button{
+                width: 64%;
+            }
+
+            .search-box{
+                width: 93%;
+            }
+
+            .search-box-icon{
+                margin-top: 4%;
+            }
+
+            .items-heading{
+                color:#192F60;
+                font-size:30px;
+                margin-left:7%;
+            }
+
+            .row-div{
+                height: 24%;
+            }
+
+            .row-items{
+                width: 92%;
+                height: 100%;
+                margin-left: 5%;
+            }
+
+            .col-items{
+                width: 103%;
+                height: 85%;
+            }
+
+            .item-1{
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+            }
+
+            .item-1-image{
+                width: 98%;
+                height: 100%;
+            }
+
+            .item-2{
+                display:inline-block;
+                width: 45%;
+                height: 100%;
+                float: right;
+                padding-top: 6%;
+                margin-right: 2%;
+            }
+
+            .item-2-heading{
+                font-size: 1.85rem;
+            }
+        }
+
+        @media(min-width:992px) and (max-width:1200px){
+            .pic-flex{
+                margin-top: 14%;
+                margin-left: 20%;
+            }
+
+            .search-box-button{
+                width: 64%;
+            }
+
+            .search-box{
+                width: 93%;
+            }
+
+            .search-box-icon{
+                margin-top: 4%;
+            }
+
+            .items-heading{
+                color:#192F60;
+                font-size:30px;
+                margin-left:2%;
+            }
+
+            .row-div{
+                height: 12%;
+            }
+
+            .row-items{
+                width: 100%;
+                height: 105%;
+                margin-left: 0%;
+            }
+
+            .col-items{
+                width: 100%;
+                height: 71%;
+            }
+
+            .item-1{
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+            }
+
+            .item-1-image{
+                width: 98%;
+                height: 100%;
+            }
+
+            .item-2{
+                display:inline-block;
+                width: 45%;
+                height: 100%;
+                float: right;
+                padding-top: 6%;
+                margin-right: 2%;
+            }
+
+            .item-2-heading{
+                font-size: 1.85rem;
+            }
+        }
+
+        @media(width:1200px){
+            .pic-flex {
+                margin-top: 12%;
+                margin-left: 25%;
+            }
+        }
+
+        @media(min-width:1201px) and (max-width:1400px){
+            .pic-flex{
+                margin-top: 12%;
+            }
+            
+            .search-box-button{
+                width: 64%;
+            }
+
+            .search-box{
+                width: 93%;
+            }
+
+            .search-box-icon{
+                margin-top: 4%;
+            }
+
+
+            .items-heading{
+                color:#192F60;
+                font-size:30px;
+                margin-left:7%;
+            }
+
+            .row-div{
+                height: 8%;
+            }
+
+            .row-items{
+                width: 92%;
+                height: 88%;
+                margin-left: 5%;
+            }
+
+            .col-items{
+                width: 103%;
+                height: 100%;
+            }
+
+            .item-1{
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+            }
+
+            .item-1-image{
+                width: 98%;
+                height: 100%;
+            }
+
+            .item-2{
+                display:inline-block;
+                width: 45%;
+                height: 100%;
+                float: right;
+                padding-top: 5%;
+            }
+
+            .item-2-heading{
+                font-size: 1.75rem;
+            }
+        }
+
+        @media(min-width:1400px){
+            .pic-flex{
+                margin-top: 14%;
+            }
+
+            .search-box-button{
+                width: 64%;
+            }
+
+            .search-box{
+                width: 93%;
+            }
+
+            .search-box-icon{
+                margin-top: 4%;
+            }
+
+            .items-heading{
+                color:#192F60;
+                font-size:30px;
+                margin-left:7%;
+            }
+
+            .row-div{
+                height: 15%;
+            }
+
+            .row-items{
+                width: 90%;
+                margin-left: 5%;
+                height: 90%;
+            }
+
+            .col-items{
+                width: 103%;
+                height: 100%;
+            }
+
+            .item-1{
+                display:inline-block;
+                width: 55%;
+                height: 100%;
+            }
+
+            .item-1-image{
+                height: 100%;
+                width: 100%;
+            }
+
+            .item-2{
+                display:inline-block;
+                width: 40%;
+                height: 100%;
+                float: right;
+                padding-top: 10%;
+            }
+
+            .item-2-heading{
+                font-size: 1.75rem;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container border shadow main-body">
+        <div class="container pic">
+            <div class="d-inline p-4 me-5 float-end login-div">
+                <a href="#" class="text-white text-decoration-none" style="opacity:0.6;">login</a>
+                <a href="#" class="text-white text-decoration-none border p-2 ms-3 rounded" style="opacity:0.6;">create an account</a>
+            </div>
+            <div class="d-inline-flex justify-content-around align-items-center flex-column pic-flex">
+                <div class="border rounded-circle bg-white logo">e!</div>
+                <div style="color:white;font-size:2rem;" class="pic-title">Find the best restaurants, cafés, and bars</div>
+                <div class="box-div">
+                    <select class="border p-3 location-box">
+                        <option>Please type a location</option>
+                        <option>Delhi</option>
+                        <option>Mmbai</option>
+                        <option>kolkatta</option>
+                    </select>
+                    <button class="search-box-button" style="background-color:white;">
+                        <i class="bi bi-search bg-white search-box-icon" style="display:inline;float:left;"></i>
+                        <input type="text" placeholder="Search for restaurants" class="border p-3 search-box">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p class="items-heading" style="font-weight: bold;">Quick searches</p>
+        <span class="items-heading" style="color: #8C96AB;font-size: 18px;">Discover restaurants by type of meal</span>
+        <br><br>
+        <div class="container row-div">
+            <div class="row row-items" >
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="border shadow col-items" >
+                        <div class="item-1 "><img src="./image-1.png" alt="" class="item-1-image"></div>
+                        <div class="item-2">
+                            <div style="color: #192F60;font-weight: bold;" class="item-2-heading">Breakfast</div>
+                            <div style="color:#8C96AB">Start your day with exclusive breakfast options</div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="border shadow col-items" >
+                        <div class="item-1 "><img src="./image-2.png" alt="" class="item-1-image"></div>
+                        <div class="item-2">
+                            <div style="color: #192F60;font-weight: bold;" class="item-2-heading">Lunch</div>
+                            <div style="color:#8C96AB">Start your day with exclusive breakfast options</div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="border shadow col-items" >
+                        <div class="item-1 "><img src="./image-3.png" alt="" class="item-1-image"></div>
+                        <div class="item-2">
+                            <div style="color: #192F60;font-weight: bold;" class="item-2-heading">Snacks</div>
+                            <div style="color:#8C96AB">Start your day with exclusive breakfast options</div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="container row-div">
+            <div class="row row-items" >
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="border shadow col-items" >
+                        <div class="item-1"><img src="./image-4.png" alt="" class="item-1-image"></div>
+                        <div class="item-2">
+                            <div style="color: #192F60;font-weight: bold;" class="item-2-heading">Dinner</div>
+                            <div style="color:#8C96AB">Start your day with exclusive breakfast options</div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="border shadow col-items" >
+                        <div class="item-1"><img src="./image-5.png" alt="" class="item-1-image"></div>
+                        <div class="item-2">
+                            <div style="color: #192F60;font-weight: bold;" class="item-2-heading">Drinks</div>
+                            <div style="color:#8C96AB">Start your day with exclusive breakfast options</div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="border shadow col-items">
+                        <div class="item-1"><img src="./image-6.png" alt="" class="item-1-image"></div>
+                        <div class="item-2">
+                            <div style="color: #192F60;font-weight: bold;" class="item-2-heading">Nightlife</div>
+                            <div style="color:#8C96AB">Start your day with exclusive breakfast options</div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
